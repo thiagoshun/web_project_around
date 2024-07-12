@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="AROUND"/>
+    <meta name="author" content="Thiago gomes"/>
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>Around</title>
+</head>
+<body class="page">
+    <div class="page__content">
+        <header class="header">
+               <img src="./images/Vector.png" 
+                    class="header__logo"
+                    alt="logo do site">
+        </header>
+        <section class="subheader">
+            <div class="subheader__first">
+                <img src="./images/Avatar.png"
+                class="subheader__logo"
+                alt="foto de Jacques"/>
+            </div>
+            <div class="subheader__description" id="Editar">
+                <h1 class="subheader__subtitle">Jacques Cousteau
+                <a href="#" class="subheader__popup" onclick="edit()"><img src="./images/Edit Button.png"></h1></a>
+                <p class="subheader__descriptionjac">Explorador</p>
+                <form class="subheader__popup-form" name="edit-dados">
+                    <input class="subheader__popup-name-input type="text" name="name">
+                    <input class="subheader__popup-title-input type="text" name="title">
+                    <input class="subheader__popup-image-input type="text" name="imagem">
+                    <input class="subheader__popup-save-button type="text" name="Salvar">
+                </form>
+
+            </div>
+            <script type="text/javascript">
+                function edit(){
+                    var Editar = document.getElementById('Editar')
+                    Editar.classList.edit('active')
+                }
+                
+
+
+            </script>
+
+            <div class="subheader__button">
+                <img src="./images/Add Button.png" 
+                    class="subheader__button-simbol"
+                    alt="botão para clicar">
+            </div>
+        </section>
+        <main class="content">
+            <article class="gallery">
+                    <img src="./images/imagem1.jpg"
+                    class="gallery__image"
+                    alt="imagem do Vale Yosemite"/>
+                    <div class="gallery__names">
+                    <h2 class="gallery__title">Vale Yosemite</h2>
+                    <img src="./images/coraçao.png" class="gallery__title-heart"  alt="">
+                    </div>
+            </article>
+            <article class="gallery">
+                <img src="./images/imagem2.png"
+                class="gallery__image"
+                alt="imagem do Lago Louise"/>
+                <div class="gallery__names">
+                <h2 class="gallery__title">Lago Louise</h2>
+                <img src="./images/coraçao.png" class="gallery__title-heart" alt="">
+                </div>  
+            </article>
+            <article class="gallery">
+                <img src="./images/imagem3.png"
+                class="gallery__image"
+                alt="imagem das Montanhas Care"/>
+                <div class="gallery__names">
+                <h2 class="gallery__title">Montanhas Care</h2>
+                <img src="./images/coraçao.png" class="gallery__title-heart" alt="">
+                </div>  
+            </article>
+            <article class="gallery">
+                <img src="./images/imagem4.png"
+                class="gallery__image"
+                alt="imagem do Latemar"/>
+                <div class="gallery__names">
+                <h2 class="gallery__title">Latemar</h2>
+                <img src="./images/coraçao.png" class="gallery__title-heart" alt="">
+                </div>  
+            </article>
+            <article class="gallery">
+                <img src="./images/imagem5.png"
+                class="gallery__image"
+                alt="imagem do Parque Nacional"/>
+                <div class="gallery__names">
+                <h2 class="gallery__title">Parque Nacional</h2>
+                <img src="./images/coraçao.png" class="gallery__title-heart" alt="">
+                </div>  
+            </article>
+            <article class="gallery">
+                <img src="./images/imagem6.png"
+                class="gallery__image"
+                alt="imagem do Lago di Braies"/>
+                <div class="gallery__names">
+                <h2 class="gallery__title">Lago di Braies</h2>
+                <img src="./images/coraçao.png" class="gallery__title-heart" alt="">
+                </div>  
+            </article>
+        </main>
+        <footer class="footer">
+            <div class="footer__copyright">&copy; © 2024 Around The U.S.</div>
+        </footer>
+    </div>
+</body>
+</html>

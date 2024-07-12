@@ -1,0 +1,17 @@
+.page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;  
+}
+
+.page__content{
+    height: 74px;
+    top: 45px;
+    gap: 0px;
+    border-bottom: 1px;
+    opacity: 0px;
+    color: #FFFFFF;
+    border: 1px solid #545454
+}

@@ -1,0 +1,35 @@
+.gallery{
+   display: flex;
+    flex-direction: column;
+}
+
+.gallery__image{
+    width: 282px;
+    height: 282px;
+}
+
+.gallery__names{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    width: 282px;
+    border-radius: 10px;
+}
+
+.gallery__title{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29.05px;
+    text-align: left;
+    color:black;
+}
+
+.gallery__title-heart{
+    width: 21px;
+    height: 19px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    margin-left: 25px;
+    gap: 0px;
+}
