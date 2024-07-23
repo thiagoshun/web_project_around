@@ -22,26 +22,21 @@
                 alt="foto de Jacques"/>
             </div>
             <div class="subheader__description" id="Editar">
-                <h1 class="subheader__subtitle">Jacques Cousteau
-                <a href="#" class="subheader__popup" onclick="edit()"><img src="./images/Edit Button.png"></h1></a>
-                <p class="subheader__descriptionjac">Explorador</p>
-                <form class="subheader__popup-form" name="edit-dados">
-                    <input class="subheader__popup-name-input type="text" name="name">
-                    <input class="subheader__popup-title-input type="text" name="title">
-                    <input class="subheader__popup-image-input type="text" name="imagem">
-                    <input class="subheader__popup-save-button type="text" name="Salvar">
+                <div class="subheader__description-name">
+                <h1 class="subheader__subtitle">Jacques Cousteau</h1>
+                <button id="button" class="subheader__edit"><img class="subheader__edit-image" src="./images/Edit Button.png" alt="edit icon">
+                </button>
+                <form class="subheader__form" name="register">
+                    <input class="subheader__name-input" type="text" name="name" placeholder="Nome">
+                    <input class="subheader__title-input" type="text" name="title" placeholder="Sua descrição">
+                    <input class="subheader__image-input" type="text" name="image" placeholder="Seu link de foto">
+                    <button class="subheader__save-button" type="submit">Salvar</button>
                 </form>
-
+                </div>
+                <p class="subheader__descriptionjac">Explorador</p>
             </div>
-            <script type="text/javascript">
-                function edit(){
-                    var Editar = document.getElementById('Editar')
-                    Editar.classList.edit('active')
-                }
-                
 
-
-            </script>
+            <script></script>
 
             <div class="subheader__button">
                 <img src="./images/Add Button.png" 

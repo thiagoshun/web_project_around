@@ -1,2 +1,0 @@
-const popupDados = documento.querySelector('.popup')
-const button = document.querySelector("subheader__edit")
