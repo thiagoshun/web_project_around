@@ -24,19 +24,23 @@
             <div class="subheader__description" id="Editar">
                 <div class="subheader__description-name">
                 <h1 class="subheader__subtitle">Jacques Cousteau</h1>
-                <button id="button" class="subheader__edit"><img class="subheader__edit-image" src="./images/Edit Button.png" alt="edit icon">
+                <div class="subheader__popup-overlay" id="popupOverlay">
+                <button onclick="submitForm()" id="button" class="subheader__edit"><img class="subheader__edit-image" src="./images/Edit Button.png" alt="edit icon">
                 </button>
+                </div>
+                <div class="subheader__popup" id="popup">
+                <h2 class="subheader__perfil">Editar perfil</h2>
                 <form class="subheader__form" name="register">
                     <input class="subheader__name-input" type="text" name="name" placeholder="Nome">
                     <input class="subheader__title-input" type="text" name="title" placeholder="Sua descrição">
-                    <input class="subheader__image-input" type="text" name="image" placeholder="Seu link de foto">
                     <button class="subheader__save-button" type="submit">Salvar</button>
                 </form>
+                </div>
                 </div>
                 <p class="subheader__descriptionjac">Explorador</p>
             </div>
 
-            <script></script>
+            <script src="scripts/index.js"></script>
 
             <div class="subheader__button">
                 <img src="./images/Add Button.png" 
