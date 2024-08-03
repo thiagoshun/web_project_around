@@ -51,6 +51,7 @@
 }
 
 .subheader__edit{
+    position: absolute;
     width: 24px;
     height: 24px;
     top: 196px;
@@ -72,10 +73,9 @@
     border: 1px 0px 0px 0px;
     opacity: 0px;
     color: #FFFFFF;
-
-
-
 }
+
+/*verificar se o display absolute é aqui mesmo ou no popeverlay*/
 
 .subheader__popup{
     width: 430px;

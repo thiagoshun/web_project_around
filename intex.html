@@ -6,10 +6,30 @@
     <meta name="description" content="AROUND"/>
     <meta name="author" content="Thiago gomes"/>
     <link rel="stylesheet" href="./pages/index.css">
-    <title>Around</title>
+    <title>Project Around The U.S.</title>
 </head>
-<body class="page">
-    <div class="page__content">
+<body>
+    <div class="page">
+        <div class="popup"></div>
+        <div class="popup__container">
+            <div class="popup__window">
+                <h3 class="popup__perfil">Editar perfil</h3>
+                <form class="popup__input" name="register">
+                    <input class="popup__name-input" 
+                    type="text" name="name" placeholder="Nome">
+                    <input class="popup__title-input" 
+                type="text" name="title" placeholder="Sua descrição">
+                    <button class="popup__save-button" 
+                    type="submit">Salvar</button>
+                </form>
+            <button class="popup__button-close" draggable="true"></button>
+            </div>
+        </div>
+        /*perguntar sobre o required depois*/
+        /*perguntar da classe do button de duas partes*/
+        //draggable//
+
+        <div class="page__content">
         <header class="header">
                <img src="./images/Vector.png" 
                     class="header__logo"
@@ -30,11 +50,7 @@
                 </div>
                 <div class="subheader__popup" id="popup">
                 <h2 class="subheader__perfil">Editar perfil</h2>
-                <form class="subheader__form" name="register">
-                    <input class="subheader__name-input" type="text" name="name" placeholder="Nome">
-                    <input class="subheader__title-input" type="text" name="title" placeholder="Sua descrição">
-                    <button class="subheader__save-button" type="submit">Salvar</button>
-                </form>
+               
                 </div>
                 </div>
                 <p class="subheader__descriptionjac">Explorador</p>
