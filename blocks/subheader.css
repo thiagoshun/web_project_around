@@ -23,20 +23,21 @@
 }
 
 .subheader__description{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    display: grid;
+    grid-template-areas:
+    "title button"
+    "subtitle span";
     color: white;
-    margin-bottom: 50px;
+    gap: 10px 18px;
+    margin-top: 22px;
+    max-height: 77px;
 }
 
 .subheader__subtitle{
-    width: 373px;
-    margin-bottom: 16px;
+    max-width: 373px;
     font-size: 42px;
     font-weight: 500;
-    margin-bottom: 16px;
+    margin: 0;
 }
 
 .subheader__button-edit{
@@ -66,10 +67,10 @@
   align-items: center;
   width: 150px;
   height: 50px;
-  margin-top: 194px;
+  margin-top: 15px;
   border-radius: 2px 0px 0px 0px;
   color: #ffffff;
-  margin-left: auto;
+  margin-left: 165px;
 }
 
 .subheader__button:hover{
