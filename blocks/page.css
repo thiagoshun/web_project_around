@@ -1,9 +1,13 @@
+body {
+  background-color: #000;
+}
+
 .page{
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: black;
-    align-items: center;  
+    align-items: center;
 }
 
 .page__content{

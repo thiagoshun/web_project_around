@@ -1,24 +1,19 @@
 .header{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     max-width: 880px;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    margin-bottom: 40px;
+    margin-top: 45px;
+    border-bottom: 1px solid #545454
 }
 
-/*.header__top{
-    display: flex;
-    height: 33px;
-    color: white;
-    margin-top: 45px;
-    margin-left: 200px;
-}*/
-
 .header__logo{
-    width: 173px;
+    max-width: 173px;
     height: 33px;
     position:absolute;
     margin-left: 200px;
+    padding-bottom: 41px;
 }
 
