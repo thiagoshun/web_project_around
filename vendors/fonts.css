@@ -1,4 +1,17 @@
 @font-face {
-    src: url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
-    font-family: "Inter", sans-serif;
-  }
+  src: url(./fonts/Inter-Regular.ttf);
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+@font-face {
+  src: url(./fonts/Inter-Medium.ttf);
+  font-family: "Inter";
+  font-weight: 500;
+}
+
+@font-face {
+  src: url(./fonts/Inter-Black.ttf);
+  font-family: "Inter";
+  font-weight: 900;
+}

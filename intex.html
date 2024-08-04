@@ -25,11 +25,7 @@
             <button class="popup__button-close" draggable="true"></button>
             </div>
         </div>
-        /*perguntar sobre o required depois*/
-        /*perguntar da classe do button de duas partes*/
-        //draggable//
 
-        <div class="page__content">
         <header class="header">
                <img src="./images/Vector.png" 
                     class="header__logo"
@@ -41,22 +37,11 @@
                 class="subheader__logo"
                 alt="foto de Jacques"/>
             </div>
-            <div class="subheader__description" id="Editar">
-                <div class="subheader__description-name">
+            <div class="subheader__description">
                 <h1 class="subheader__subtitle">Jacques Cousteau</h1>
-                <div class="subheader__popup-overlay" id="popupOverlay">
-                <button onclick="submitForm()" id="button" class="subheader__edit"><img class="subheader__edit-image" src="./images/Edit Button.png" alt="edit icon">
-                </button>
-                </div>
-                <div class="subheader__popup" id="popup">
-                <h2 class="subheader__perfil">Editar perfil</h2>
-               
-                </div>
-                </div>
+                <button class="subheader__button-edit"></button>
                 <p class="subheader__descriptionjac">Explorador</p>
             </div>
-
-            <script src="scripts/index.js"></script>
 
             <div class="subheader__button">
                 <img src="./images/Add Button.png" 
@@ -71,7 +56,7 @@
                     alt="imagem do Vale Yosemite"/>
                     <div class="gallery__names">
                     <h2 class="gallery__title">Vale Yosemite</h2>
-                    <img src="./images/coraçao.png" class="gallery__title-heart"  alt="">
+                    <img src="./images/coraçao.png" class="gallery__title-heart"  alt="like" id="button-heart">
                     </div>
             </article>
             <article class="gallery">
@@ -124,5 +109,6 @@
             <div class="footer__copyright">&copy; © 2024 Around The U.S.</div>
         </footer>
     </div>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
