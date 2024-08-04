@@ -16,8 +16,8 @@
 }
 
 .popup__window{
-
-}
+  width: 100%;
+  }
 
 .popup__perfil{
   font-size: 24px;

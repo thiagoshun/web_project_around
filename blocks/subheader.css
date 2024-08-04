@@ -48,7 +48,10 @@
 }
 
 .subheader__button-edit:hover{
-
+  opacity: 60%;
+  cursor: pointer;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
 }
 
 .subheader__descriptionjac{
