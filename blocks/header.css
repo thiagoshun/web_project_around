@@ -1,18 +1,13 @@
 .header{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     max-width: 880px;
     margin-bottom: 40px;
     margin-top: 45px;
-    border-bottom: 1px solid #545454
+    border-bottom: 1px solid #545454;
+    width:100%;
 }
 
 .header__logo{
     max-width: 173px;
     height: 33px;
-    position:absolute;
-    padding-bottom: 41px;
 }
 

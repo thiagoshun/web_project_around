@@ -1,10 +1,15 @@
 .subheader{
     display: flex;
-    max-width: 880px;
-    padding-top: 40px;
-    margin-left: 180px;
+    justify-content: space-between;
+    width: 880px;
+
 }
 
+.subheader__zero{
+  display: flex;
+  flex-direction: row;
+
+}
 .subheader__first{
     width: 120px;
     color: #ffffff;
@@ -62,18 +67,19 @@
 }
 
 .subheader__button{
-  background: transparent url('../images/Add\ Button.png');
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 150px;
   height: 50px;
-  margin-top: 15px;
-  border-radius: 2px 0px 0px 0px;
+  margin-top: 30px;
+  border-radius: 2px;
   color: #ffffff;
   margin-left: 165px;
+  border: 1px solid #FFFFFF;
 }
 
 .subheader__button:hover{
-  margin-top: 75px;
-  border: 2px solid #FFFFFF;
+  opacity: 2px;
+
 }
