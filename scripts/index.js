@@ -21,9 +21,9 @@ function saveForm(event){
   const editDescript =document.querySelector(".popup__text-name");
   yourName.textContent = editDescript.value;
 
-  const job = document.querySelector(".subheader__description");
+  const job = document.querySelector(".subheader__descriptionjac");
   const editJob = document.querySelector(".popup__text-description");
-  job.textContent = editJob.valu;
+  job.textContent = editJob.value;
+  closeDados();
 }
-
 popupEditProfile.addEventListener("submit", saveForm);

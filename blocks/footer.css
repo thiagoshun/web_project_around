@@ -1,20 +1,22 @@
 .footer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; 
+    justify-content: flex-start;
+    align-items: flex-start;
     margin-top: 67px;
     height: 18px;
-    left: 200px;
-    opacity: 0px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 876px;
 }
 
 .footer__copyright{
-    margin-left: 200px;
+    margin: 0;
     font-family: Inter;
     font-size: 18px;
     font-weight: 400;
     text-align: left;
     color: #545454;
-    margin-bottom: 60px;
+
 }
