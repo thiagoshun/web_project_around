@@ -5,6 +5,7 @@ const closeButton = document.querySelector(".popup__button-close");
 const popupEditProfile = document.querySelector(".popup__input");
 
 function showPop() {
+  console.log('dois')
   showPopup.style.display = "block";
 }
 addDados.addEventListener("click", showPop);
