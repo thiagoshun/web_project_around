@@ -51,11 +51,11 @@
     background: transparent url("../images/Edit\ Button.png") center no-repeat;
     margin-top: 15px;
     border: 1px solid rgba(255, 255, 255, 1);
-}
+    cursor: pointer;
+  }
 
 .subheader__button-edit:hover{
   opacity: 60%;
-  cursor: pointer;
   cursor: pointer;
   transition: 200ms ease-in-out;
 }
@@ -81,7 +81,6 @@
 
 .subheader__button:hover{
   opacity: 2px;
-
 }
 
 @media screen and (max-width: 720px){
@@ -100,7 +99,7 @@
 .subheader__description{
   margin-top: 30px;
   margin-inline: 19px;
-  max-width: 282p
+  max-width: 282px;
 }
 
 .subheader__subtitle{
@@ -126,6 +125,7 @@ margin-top: 14px;
   max-width: 282px;
   height: 50px;
   margin: 36px auto 0;
+  cursor: pointer;
 }
 }
 

@@ -11,4 +11,4 @@ The technologies used were HTML, CSS and Javascript applying BEM methodology in 
 
 ### GitHub Page:
 
-https://github.com/thiagoshun/web_project_around-main
+https://github.com/thiagoshun/web_project_around.git
