@@ -16,7 +16,8 @@
   width: 100%;
   background-color: #FFFFFF;
   max-width: 430px;
-  margin: 165px 555px;
+  margin: auto;
+  margin-top: 195px;
 }
 
 .popup__perfil{
@@ -70,12 +71,13 @@
 .popup__button-close{
   background: url('../images/CloseIcon.png') center no-repeat;
   position: absolute;
-  left: 436px;
+  margin-left: 430.72px;
   top: 5px;
-  border: none;
-  width: 26px;
-  height: 26px;
-  margin: 130px 555px;
+  order: none;
+  width: 40px;
+  height: 40px;
+  margin-top: 146.72px;
+
 }
 
 .popup__button-close:hover {
@@ -87,7 +89,8 @@
   .popup__window{
     background-color: #FFFFFF;
     max-width: 282px;
-    margin: 123px 19px;
+    margin: auto;
+    margin-top: 123px;
     }
 
   .popup__perfil {
@@ -113,7 +116,10 @@
   }
 
   .popup__button-close {
-    margin: 85px -162px;
+    width: 26px;
+    height: 26px;
+    margin-top: 72.62px;
+    margin-left: 260px;
     color: #FFFFFF;
     background-color: transparent;
   }
