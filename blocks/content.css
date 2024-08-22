@@ -8,13 +8,24 @@
     max-width: 880px;
 }
 
+@media screen and (max-width: 1024px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 17px 20px;
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+}
+
 @media screen and (max-width: 720px){
   .content {
     max-width: 282px;
     gap: 20px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     overflow-x: hidden;
   }
 }

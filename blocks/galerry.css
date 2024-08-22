@@ -45,3 +45,11 @@
 .gallery__title-heart:active{
   background-color: rgb(248, 0, 0);
 }
+
+
+@media screen and (max-width: 720px){
+  .gallery{
+    display: flex;
+    flex-direction: column;
+ }
+}

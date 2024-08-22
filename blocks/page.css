@@ -24,6 +24,7 @@ body {
   .page{
     max-width: 1024px;
     overflow: hidden;
+    padding: 0 90px;
   }
 }
 
@@ -31,6 +32,7 @@ body {
 .page__container {
   max-width: 800px;
 }
+
 
 
 @media screen and (max-width: 720px) {

@@ -41,8 +41,9 @@
 .subheader__subtitle{
     max-width: 373px;
     font-size: 42px;
-    font-weight: 500;
+    font-weight: 400;
     margin: 0;
+    font-family: 'Inter';
 }
 
 .subheader__button-edit{
@@ -64,6 +65,8 @@
   font-size: 18px;
   font-weight: 400;
   margin: 16px 0 0;
+  font-family: 'Inter';
+  line-height: 21.78px;
 }
 
 .subheader__button{
@@ -83,10 +86,43 @@
   opacity: 2px;
 }
 
+@media screen and (max-width: 1024px) {
+  .subheader {
+    width: 100%;
+    display: flex;
+    margin-top: 42px;
+    margin-bottom: 36px;
+  }
+
+  .subheader__subtitle{
+    max-width: none;
+    font-size: 42px;
+    font-weight: 400;
+    margin: 0;
+    font-family: 'Inter';
+}
+
+.subheader__button-edit{
+  width: 20px;
+  height: 20px;
+  margin-right: 300px;
+  margin-top: 20px
+}
+
+.subheader__button{
+  max-width: 150px;
+  margin: auto;
+  width: 100%;
+
+}
+
+}
+
 @media screen and (max-width: 720px){
   .subheader {
     width: 282px;
-    display: flex;flex-direction: column;
+    display: flex;
+    flex-direction: column;
     margin-top: 42px;
 }
 
@@ -107,6 +143,7 @@
   margin-top: 30px;
   margin-inline: 19px;
   max-width: 282px;
+
 }
 
 .subheader__subtitle{

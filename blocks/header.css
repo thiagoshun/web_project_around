@@ -9,11 +9,13 @@
 .header__logo{
     max-width: 173px;
     height: 33px;
+    margin-bottom: 41px;
 }
 
 @media screen and (max-width: 720px){
   .header__logo{
   max-width: 173px;
   height: 24px;
+  margin-bottom: 32px;
 }
 }
