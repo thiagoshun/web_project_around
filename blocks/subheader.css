@@ -105,7 +105,7 @@
 .subheader__button-edit{
   width: 20px;
   height: 20px;
-  margin-right: 300px;
+  margin-right: 40px;
   margin-top: 20px
 }
 
@@ -143,6 +143,8 @@
   margin-top: 30px;
   margin-inline: 19px;
   max-width: 282px;
+  gap: 10px;
+  font-family: 'Inter';
 
 }
 
