@@ -28,14 +28,17 @@
 }
 
 .subheader__description{
-    display: grid;
-    grid-template-areas:
-    "title button"
-    "subtitle span";
+    display: flex;
+    flex-direction: column;
     color: white;
-    gap: 10px 18px;
     margin-top: 22px;
     max-height: 77px;
+}
+
+.subheader__nome {
+  display: flex;
+  gap: 18px;
+
 }
 
 .subheader__subtitle{
@@ -64,7 +67,7 @@
 .subheader__descriptionjac{
   font-size: 18px;
   font-weight: 400;
-  margin: 16px 0 0;
+  margin: 0;
   font-family: 'Inter';
   line-height: 21.78px;
 }
@@ -83,7 +86,7 @@
 }
 
 .subheader__button:hover{
-  opacity: 2px;
+  opacity: 60%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -95,25 +98,36 @@
   }
 
   .subheader__subtitle{
-    max-width: none;
-    font-size: 42px;
-    font-weight: 400;
-    margin: 0;
-    font-family: 'Inter';
+    font-size: 22px;
+    text-align: center;
+    font-family: 'inter';
 }
 
 .subheader__button-edit{
-  width: 20px;
-  height: 20px;
-  margin-right: 40px;
-  margin-top: 20px
+  width: 18px;
+  height: 18px;
+  padding-left: 10px;
+  margin-top: 4px
+}
+
+.subheader__descriptionjac{
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  font-family: 'Inter';
+  line-height: 21.78px;
+
 }
 
 .subheader__button{
   max-width: 150px;
-  margin: auto;
+  margin-left: 0;
   width: 100%;
 
+}
+
+.subheader__button:hover{
+  opacity: 60%;
 }
 
 }
@@ -130,7 +144,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .subheader__logo{
@@ -141,7 +154,8 @@
 
 .subheader__description{
   margin-top: 30px;
-  margin-inline: 19px;
+  justify-content: center;
+  align-items: center;
   max-width: 282px;
   gap: 10px;
   font-family: 'Inter';
@@ -164,10 +178,9 @@
 .subheader__descriptionjac{
 font-size: 14px;
 text-align: center;
-margin-top: 14px;
 font-family: "inter";
 font-weight: 400;
-margin-left: 40px;
+
 }
 
 .subheader__button{
@@ -177,6 +190,10 @@ margin-left: 40px;
   margin: 36px auto 0;
   cursor: pointer;
   margin-bottom: 36px;
+}
+
+.subheader__button:hover{
+  opacity: 60%;
 }
 }
 

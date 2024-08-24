@@ -1,115 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="AROUND"/>
-    <meta name="author" content="Thiago gomes"/>
-    <link rel="stylesheet" href="./pages/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AROUND" />
+    <meta name="author" content="Thiago gomes" />
+    <link rel="stylesheet" type="text/css" href="./pages/index.css" />
     <title>Project Around The U.S.</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="page">
-        <div class="popup">
+      <div class="popup">
         <div class="popup__container">
-            <div class="popup__window">
-                <h3 class="popup__perfil">Editar perfil</h3>
-                <form class="popup__form" name="register">
-                    <input class="popup__text popup__text-name"
-                    type="text" name="name" placeholder="Nome" required>
-                    <input class="popup__text popup__text-description"
-                type="text" name="title" placeholder="Sua descrição" required>
-                    <button class="popup__save-button"
-                    type="submit">Salvar</button>
-                </form>
-                <button class="popup__button-close" draggable="true"></button>
-            </div>
-        </div>
-        </div>
-
-        <header class="header">
-               <img src="./images/Vector.png"
-                    class="header__logo"
-                    alt="logo do site">
-        </header>
-        <section class="subheader">
-          <div class="subheader__zero">
-            <div class="subheader__first">
-                <img src="./images/Avatar.png"
-                class="subheader__logo"
-                alt="foto de Jacques"/>
-            </div>
-            <div class="subheader__description">
-                <h1 class="subheader__subtitle">Jacques Cousteau</h1>
-                <button class="subheader__button-edit"></button>
-                <p class="subheader__descriptionjac">Explorador</p>
-            </div>
+          <div class="popup__window">
+            <h3 class="popup__perfil">Editar perfil</h3>
+            <form class="popup__form" name="register">
+              <input
+                class="popup__text popup__text-name"
+                type="text"
+                name="name"
+                placeholder="Nome"
+                required
+              />
+              <input
+                class="popup__text popup__text-description"
+                type="text"
+                name="title"
+                placeholder="Sua descrição"
+                required
+              />
+              <button class="popup__save-button" type="submit">Salvar</button>
+            </form>
+            <button class="popup__button-close" draggable="true"></button>
           </div>
+        </div>
+      </div>
 
-            <div class="subheader__button">
-              <img src="./images/Add Button.png" alt="add button">
+      <header class="header">
+        <img
+          src="./images/Vector.png"
+          class="header__logo"
+          alt="logo do site"
+        />
+      </header>
+      <section class="subheader">
+        <div class="subheader__zero">
+          <div class="subheader__first">
+            <img
+              src="./images/Avatar.png"
+              class="subheader__logo"
+              alt="foto de Jacques"
+            />
+          </div>
+          <div class="subheader__description">
+            <div class="subheader__nome">
+              <h1 class="subheader__subtitle">Jacques Cousteau</h1>
+              <button class="subheader__button-edit"></button>
             </div>
-        </section>
-        <main class="content">
-            <article class="gallery">
-                    <img src="./images/imagem1.jpg"
-                    class="gallery__image"
-                    alt="imagem do Vale Yosemite"/>
-                    <div class="gallery__names">
-                    <h2 class="gallery__title">Vale Yosemite</h2>
-                    <img src="./images/coraçao.png" class="gallery__title-heart"  alt="like" id="button-heart">
-                    </div>
-            </article>
-            <article class="gallery">
-                <img src="./images/imagem2.png"
-                class="gallery__image"
-                alt="imagem do Lago Louise"/>
-                <div class="gallery__names">
-                <h2 class="gallery__title">Lago Louise</h2>
-                <img src="./images/coraçao.png" class="gallery__title-heart" alt="">
-                </div>
-            </article>
-            <article class="gallery">
-                <img src="./images/imagem3.png"
-                class="gallery__image"
-                alt="imagem das Montanhas Care"/>
-                <div class="gallery__names">
-                <h2 class="gallery__title">Montanhas Care</h2>
-                <img src="./images/coraçao.png" class="gallery__title-heart" alt="">
-                </div>
-            </article>
-            <article class="gallery">
-                <img src="./images/imagem4.png"
-                class="gallery__image"
-                alt="imagem do Latemar"/>
-                <div class="gallery__names">
-                <h2 class="gallery__title">Latemar</h2>
-                <img src="./images/coraçao.png" class="gallery__title-heart" alt="">
-                </div>
-            </article>
-            <article class="gallery">
-                <img src="./images/imagem5.png"
-                class="gallery__image"
-                alt="imagem do Parque Nacional"/>
-                <div class="gallery__names">
-                <h2 class="gallery__title">Parque Nacional</h2>
-                <img src="./images/coraçao.png" class="gallery__title-heart" alt="">
-                </div>
-            </article>
-            <article class="gallery">
-                <img src="./images/imagem6.png"
-                class="gallery__image"
-                alt="imagem do Lago di Braies"/>
-                <div class="gallery__names">
-                <h2 class="gallery__title">Lago di Braies</h2>
-                <img src="./images/coraçao.png" class="gallery__title-heart" alt="">
-                </div>
-            </article>
-        </main>
-        <footer class="footer">
-            <div class="footer__copyright">&copy; 2024 Around The U.S.</div>
-        </footer>
+            <p class="subheader__descriptionjac">Explorador</p>
+          </div>
+        </div>
+
+        <div class="subheader__button">
+          <img src="./images/Add Button.png" alt="add button" />
+        </div>
+      </section>
+      <main class="content">
+        <article class="gallery">
+          <img
+            src="./images/imagem1.jpg"
+            class="gallery__image"
+            alt="imagem do Vale Yosemite"
+          />
+          <div class="gallery__names">
+            <h2 class="gallery__title">Vale Yosemite</h2>
+            <img
+              src="./images/coraçao.png"
+              class="gallery__title-heart"
+              alt="like"
+              id="button-heart"
+            />
+          </div>
+        </article>
+        <article class="gallery">
+          <img
+            src="./images/imagem2.png"
+            class="gallery__image"
+            alt="imagem do Lago Louise"
+          />
+          <div class="gallery__names">
+            <h2 class="gallery__title">Lago Louise</h2>
+            <img
+              src="./images/coraçao.png"
+              class="gallery__title-heart"
+              alt=""
+            />
+          </div>
+        </article>
+        <article class="gallery">
+          <img
+            src="./images/imagem3.png"
+            class="gallery__image"
+            alt="imagem das Montanhas Care"
+          />
+          <div class="gallery__names">
+            <h2 class="gallery__title">Montanhas Care</h2>
+            <img
+              src="./images/coraçao.png"
+              class="gallery__title-heart"
+              alt=""
+            />
+          </div>
+        </article>
+        <article class="gallery">
+          <img
+            src="./images/imagem4.png"
+            class="gallery__image"
+            alt="imagem do Latemar"
+          />
+          <div class="gallery__names">
+            <h2 class="gallery__title">Latemar</h2>
+            <img
+              src="./images/coraçao.png"
+              class="gallery__title-heart"
+              alt=""
+            />
+          </div>
+        </article>
+        <article class="gallery">
+          <img
+            src="./images/imagem5.png"
+            class="gallery__image"
+            alt="imagem do Parque Nacional"
+          />
+          <div class="gallery__names">
+            <h2 class="gallery__title">Parque Nacional</h2>
+            <img
+              src="./images/coraçao.png"
+              class="gallery__title-heart"
+              alt=""
+            />
+          </div>
+        </article>
+        <article class="gallery">
+          <img
+            src="./images/imagem6.png"
+            class="gallery__image"
+            alt="imagem do Lago di Braies"
+          />
+          <div class="gallery__names">
+            <h2 class="gallery__title">Lago di Braies</h2>
+            <img
+              src="./images/coraçao.png"
+              class="gallery__title-heart"
+              alt=""
+            />
+          </div>
+        </article>
+      </main>
+      <footer class="footer">
+        <div class="footer__copyright">&copy; 2024 Around The U.S.</div>
+      </footer>
     </div>
     <script src="./scripts/index.js"></script>
-</body>
+  </body>
 </html>
