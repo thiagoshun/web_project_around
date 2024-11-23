@@ -89,6 +89,10 @@
   opacity: 60%;
 }
 
+.subheader__button-card{
+  background: transparent;
+}
+
 @media screen and (max-width: 1024px) {
   .subheader {
     width: 100%;

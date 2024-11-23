@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="page">
-      <div class="popup">
+      <div class="popup" id="popup">
         <div class="popup__container">
           <div class="popup__window">
             <h3 class="popup__perfil">Editar perfil</h3>
@@ -26,6 +26,31 @@
                 class="popup__text popup__text-description"
                 type="text"
                 name="title"
+                placeholder="Sua descrição"
+                required
+              />
+              <button class="popup__save-button" type="submit">Salvar</button>
+            </form>
+            <button class="popup__button-close" draggable="true"></button>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popupNew">
+        <div class="popup__container">
+          <div class="popup__window">
+            <h3 class="popup__perfil">New Place</h3>
+            <form class="popup__form" title="register">
+              <input
+                class="popup__text popup__text-name"
+                type="text"
+                name="title"
+                placeholder="title"
+                required
+              />
+              <input
+                class="popup__text popup__text-description"
+                type="link"
+                name="link URL"
                 placeholder="Sua descrição"
                 required
               />
@@ -62,7 +87,9 @@
         </div>
 
         <div class="subheader__button">
+          <button class="subheader__button-card">
           <img src="./images/Add Button.png" alt="add button" />
+        </button>
         </div>
       </section>
       <main class="content">
@@ -74,12 +101,25 @@
           />
           <div class="gallery__names">
             <h2 class="gallery__title">Vale Yosemite</h2>
+            <button
+            class="gallery__title-heart"
+            id="gallery__title-heart"
+            ></button>
+
             <img
               src="./images/coraçao.png"
               class="gallery__title-heart"
               alt="like"
               id="button-heart"
+              onclick=""
             />
+            <img
+            src="./images/Union.png"
+            alt="liked"
+            class="gallery__title-like"
+            id="button-heart-red"
+            onclick=""
+            >
           </div>
         </article>
         <article class="gallery">
@@ -95,6 +135,13 @@
               class="gallery__title-heart"
               alt=""
             />
+            <img
+            src="./images/Union.png"
+            alt="liked"
+            class="gallery__title-like"
+            id="button-heart-red"
+            onclick=""
+            >
           </div>
         </article>
         <article class="gallery">
