@@ -10,57 +10,6 @@
   </head>
   <body>
     <div class="page">
-      <div class="popup" id="popup">
-        <div class="popup__container">
-          <div class="popup__window">
-            <h3 class="popup__perfil">Editar perfil</h3>
-            <form class="popup__form" name="register">
-              <input
-                class="popup__text popup__text-name"
-                type="text"
-                name="name"
-                placeholder="Nome"
-                required
-              />
-              <input
-                class="popup__text popup__text-description"
-                type="text"
-                name="title"
-                placeholder="Sua descrição"
-                required
-              />
-              <button class="popup__save-button" type="submit">Salvar</button>
-            </form>
-            <button class="popup__button-close" draggable="true"></button>
-          </div>
-        </div>
-      </div>
-      <div class="popup" id="popupNew">
-        <div class="popup__container">
-          <div class="popup__window">
-            <h3 class="popup__perfil">New Place</h3>
-            <form class="popup__form" title="register">
-              <input
-                class="popup__text popup__text-name"
-                type="text"
-                name="title"
-                placeholder="title"
-                required
-              />
-              <input
-                class="popup__text popup__text-description"
-                type="link"
-                name="link URL"
-                placeholder="Sua descrição"
-                required
-              />
-              <button class="popup__save-button" type="submit">Salvar</button>
-            </form>
-            <button class="popup__button-close" draggable="true"></button>
-          </div>
-        </div>
-      </div>
-
       <header class="header">
         <img
           src="./images/Vector.png"
@@ -93,121 +42,83 @@
         </div>
       </section>
       <main class="content">
+      </main>
+      <template id="template">
         <article class="gallery">
           <img
             src="./images/imagem1.jpg"
             class="gallery__image"
-            alt="imagem do Vale Yosemite"
+            alt=""
           />
           <div class="gallery__names">
-            <h2 class="gallery__title">Vale Yosemite</h2>
+            <h2 class="gallery__title"></h2>
             <button
             class="gallery__title-heart"
             id="gallery__title-heart"
-            ></button>
+            ><img
+            src="./images/coraçao.png"
+            class="gallery__title-heart"
+            alt="like"
+            id="button-heart"
+            onclick=""
 
-            <img
-              src="./images/coraçao.png"
-              class="gallery__title-heart"
-              alt="like"
-              id="button-heart"
-              onclick=""
-            />
-            <img
-            src="./images/Union.png"
-            alt="liked"
-            class="gallery__title-like"
-            id="button-heart-red"
-            onclick=""
-            >
+          /></button>
           </div>
         </article>
-        <article class="gallery">
-          <img
-            src="./images/imagem2.png"
-            class="gallery__image"
-            alt="imagem do Lago Louise"
-          />
-          <div class="gallery__names">
-            <h2 class="gallery__title">Lago Louise</h2>
-            <img
-              src="./images/coraçao.png"
-              class="gallery__title-heart"
-              alt=""
-            />
-            <img
-            src="./images/Union.png"
-            alt="liked"
-            class="gallery__title-like"
-            id="button-heart-red"
-            onclick=""
-            >
-          </div>
-        </article>
-        <article class="gallery">
-          <img
-            src="./images/imagem3.png"
-            class="gallery__image"
-            alt="imagem das Montanhas Care"
-          />
-          <div class="gallery__names">
-            <h2 class="gallery__title">Montanhas Care</h2>
-            <img
-              src="./images/coraçao.png"
-              class="gallery__title-heart"
-              alt=""
-            />
-          </div>
-        </article>
-        <article class="gallery">
-          <img
-            src="./images/imagem4.png"
-            class="gallery__image"
-            alt="imagem do Latemar"
-          />
-          <div class="gallery__names">
-            <h2 class="gallery__title">Latemar</h2>
-            <img
-              src="./images/coraçao.png"
-              class="gallery__title-heart"
-              alt=""
-            />
-          </div>
-        </article>
-        <article class="gallery">
-          <img
-            src="./images/imagem5.png"
-            class="gallery__image"
-            alt="imagem do Parque Nacional"
-          />
-          <div class="gallery__names">
-            <h2 class="gallery__title">Parque Nacional</h2>
-            <img
-              src="./images/coraçao.png"
-              class="gallery__title-heart"
-              alt=""
-            />
-          </div>
-        </article>
-        <article class="gallery">
-          <img
-            src="./images/imagem6.png"
-            class="gallery__image"
-            alt="imagem do Lago di Braies"
-          />
-          <div class="gallery__names">
-            <h2 class="gallery__title">Lago di Braies</h2>
-            <img
-              src="./images/coraçao.png"
-              class="gallery__title-heart"
-              alt=""
-            />
-          </div>
-        </article>
-      </main>
+      </template>
       <footer class="footer">
         <div class="footer__copyright">&copy; 2024 Around The U.S.</div>
       </footer>
+      <div class="popup" id="popup">
+        <div class="popup__container">
+          <div class="popup__window">
+            <h3 class="popup__perfil">Editar perfil</h3>
+            <form class="popup__form" name="register">
+              <input
+                class="popup__text popup__text-name"
+                type="text"
+                name="name"
+                placeholder="Nome"
+                required
+              />
+              <input
+                class="popup__text popup__text-description"
+                type="text"
+                name="title"
+                placeholder="Sua descrição"
+                required
+              />
+              <button class="popup__save-button" type="submit">Salvar</button>
+            </form>
+            <button class="popup__button-close" id="buttonCloseEdit" draggable="true"></button>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popupNew">
+        <div class="popup__container">
+          <div class="popup__window">
+            <h3 class="popup__perfil">New Place</h3>
+            <form class="popup__form popup__form-addCard" title="register">
+              <input
+                class="popup__text popup__text-name"
+                type="text"
+                name="title"
+                placeholder="title"
+                required
+              />
+              <input
+                class="popup__text popup__text-url"
+                type="link"
+                name="link URL"
+                placeholder="link URL"
+                required
+              />
+              <button class="popup__save-button" type="submit">Salvar</button>
+            </form>
+            <button class="popup__button-close" id="buttonClose" draggable="true"></button>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./scripts/index.js"></script>
   </body>

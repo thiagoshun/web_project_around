@@ -1,22 +1,34 @@
-//const showPopup = document.querySelector(".popup__container");
-const addData = document.querySelector(".subheader__button-edit");
+const buttonOpenEditProfile = document.querySelector(".subheader__button-edit");
 const saveData = document.querySelector(".popup__save-button");
-const closeButton = document.querySelector(".popup__button-close");
-const popupEditProfile = document.querySelector(".popup__form");
-
+const popupEditProfileForm = document.querySelector(".popup__form");
 
 function showPop() {
   const openPop = document.querySelector("#popup");
   const popContainer = openPop.querySelector(".popup__container");
   popContainer.style.display ="block";
-
 }
-addData.addEventListener("click", showPop);
+buttonOpenEditProfile.addEventListener("click", showPop);
 
-function closeData(){
-  showPopup.style.display = "none";
+//criar variavel para cada um dos botoes
+const closeEdit = document.querySelector("#buttonCloseEdit");
+const closeCard = document.querySelector("#buttonClose");
+//colocar o addventListner para cada um exm, L24
+closeEdit.addEventListener ("click", function(){
+  const openPop = document.querySelector("#popup");
+  const popContainer = openPop.querySelector(".popup__container");
+  popContainer.style.display ="none";
+})
+closeCard.addEventListener ("click", function(){
+  const openPop = document.querySelector("#popupNew");
+  const popContainer = openPop.querySelector(".popup__container");
+  popContainer.style.display ="none";
+});
+
+function closePopupEditProfile(){
+  const openPop = document.querySelector("#popup");
+  const popContainer = openPop.querySelector(".popup__container");
+  popContainer.style.display ="none";
 }
-closeButton.addEventListener("click", closeData);
 
 function saveForm(event){
   event.preventDefault();
@@ -28,33 +40,23 @@ function saveForm(event){
   const job = document.querySelector(".subheader__descriptionjac");
   const editJob = document.querySelector(".popup__text-description");
   job.textContent = editJob.value;
-  closeData();
+  closePopupEditProfile();
 }
-popupEditProfile.addEventListener("submit", saveForm);
+popupEditProfileForm.addEventListener("submit", saveForm);
 
 
 //button add card button
-const addCardButton = document.querySelector(".subheader__button-edit");
+const buttonOpenAddCardPopup = document.querySelector(".subheader__button-card");
 
-function addCard() {
+function addCardOpenPopup() {
   //selecionao o pop que vai trabalhar
   const popupNew = document.querySelector("#popupNew");
   //pegar o pop container
   const popContainer = popupNew.querySelector(".popup__container");
   popContainer.style.display ="block";
 }
-addCardButton.addEventListener("click", addCard);
-//----------------------------------------------------------------------
-/*const showAddCard = document.querySelector(".subheader__button");
-const addCard = document.querySelector(".subheader__button-card");
-
-function addCardNew(){
-  console.log("card")
-  showPop.style.display = "block";
-}
-addCard.addEventListener("click", addCardNew);
-*/
-
+buttonOpenAddCardPopup.addEventListener("click", addCardOpenPopup);
+const addCardForm = document.querySelector(".popup__form-addCard");
 
 //add card
 //array
@@ -87,26 +89,35 @@ const initialCards = [
 
 
 //criar cartao
-function createCard (newCard){
-const cardTemplate = document.querySelector("#cards-template").contente;
+function createCard(newCard){
+  const cardTemplate = document.querySelector("#template").content;
 
-const cardElement = cardTemplate.querySelector (".newCard").cloneNode(true);
-console.log (cardElement);
+  const cardElement = cardTemplate.querySelector(".gallery").cloneNode(true);
+  console.log (cardElement);
 
-const cardName = cardElement.querySelector(".");
-const cardLink = cardElement.querySelector(".");
+  const cardName = cardElement.querySelector(".gallery__title");
+  const cardLink = cardElement.querySelector(".gallery__image");
+  const cardButtonLike = cardElement.querySelector(".gallery__title-heart");
+
+
+  //ele nao esta puxando o coraçao na imagem
+  cardButtonLike.addEventListener("click", () => {
+    if (cardButtonLike.getAttribute("src") === "./images/coraçao.png") {
+      return cardButtonLike.src = "./images/Union.png";
+    }
+
+    return cardButtonLike.src = "./images/coraçao.png";
+  })
+
+  cardName.textContent = newCard.name;
+  cardLink.src = newCard.link;
+  cardLink.alt = newCard.name;
+
+  return cardElement;
 }
 
-
-//add like
-const galleryLike = document.querySelectorAll("#gallery__title-heart");
-
-console.log(galleryLike);
-function likes(event){
-  let like = event.target;
-  if (like.classList.contains("gallery__title-heart")) {
-    like.classList.remove("gallery__title-heart");
-    like.classList.add("gallery__title-like")
-  }
-}
-gallery.forEach((like) => like.addEventListener("click", likes));
+const cardList = document.querySelector(".content");
+initialCards.forEach((card) => {
+  const cardElement = createCard(card);
+  cardList.prepend(cardElement);
+})
