@@ -45,6 +45,7 @@ function saveForm(event){
 popupEditProfileForm.addEventListener("submit", saveForm);
 
 
+
 //button add card button
 const buttonOpenAddCardPopup = document.querySelector(".subheader__button-card");
 
@@ -97,16 +98,22 @@ function createCard(newCard){
 
   const cardName = cardElement.querySelector(".gallery__title");
   const cardLink = cardElement.querySelector(".gallery__image");
-  const cardButtonLike = cardElement.querySelector(".gallery__title-heart");
+  const cardButtonLike = cardElement.querySelector(".gallery__title-button");
 
 
-  //ele nao esta puxando o coraçao na imagem
-  cardButtonLike.addEventListener("click", () => {
-    if (cardButtonLike.getAttribute("src") === "./images/coraçao.png") {
-      return cardButtonLike.src = "./images/Union.png";
+  //ele nao esta puxando o coraçao.
+  cardButtonLike.addEventListener("click", (event) => {
+    console.log (event.target);
+    const image = event.target;
+    console.log (image);
+    if (image.classList.contains (".gallery__title-button")){
+      image.classList.remove (".gallery__title-button");
+      image.classList.add(".gallery__title-like");
+      return ;
     }
-
-    return cardButtonLike.src = "./images/coraçao.png";
+      image.classList.remove (".gallery__title-like");
+      image.classList.add(".gallery__title-button");
+      return ;
   })
 
   cardName.textContent = newCard.name;
@@ -115,7 +122,13 @@ function createCard(newCard){
 
   return cardElement;
 }
-
+//lixeira da foto da galeria
+function deletePhoto() {
+  const trash = document.querySelector('.trash-icon');
+  if (confirm('Você tem certeza que deseja deletar esta foto?')) {
+      trash.remove();
+  }
+}
 const cardList = document.querySelector(".content");
 initialCards.forEach((card) => {
   const cardElement = createCard(card);

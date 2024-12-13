@@ -45,24 +45,20 @@
       </main>
       <template id="template">
         <article class="gallery">
+          <!-- imagem da galeria -->
           <img
             src="./images/imagem1.jpg"
             class="gallery__image"
             alt=""
-          />
+            />
+            <button class="trash-icon" onclick="deletePhoto()"></button>
+         <!-- /*nome da foto com o botão curtir*/ -->
           <div class="gallery__names">
             <h2 class="gallery__title"></h2>
             <button
-            class="gallery__title-heart"
-            id="gallery__title-heart"
-            ><img
-            src="./images/coraçao.png"
-            class="gallery__title-heart"
-            alt="like"
-            id="button-heart"
-            onclick=""
-
-          /></button>
+            class="gallery__title-button"
+            id="gallery__title-button"
+            ></button>
           </div>
         </article>
       </template>
@@ -88,7 +84,7 @@
                 placeholder="Sua descrição"
                 required
               />
-              <button class="popup__save-button" type="submit">Salvar</button>
+              <button class="popup__save-button" id="popup__save-button" type="submit">Salvar</button>
             </form>
             <button class="popup__button-close" id="buttonCloseEdit" draggable="true"></button>
           </div>
