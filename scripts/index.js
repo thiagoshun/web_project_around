@@ -129,6 +129,8 @@ function deletePhoto() {
       trash.remove();
   }
 }
+
+
 const cardList = document.querySelector(".content");
 initialCards.forEach((card) => {
   const cardElement = createCard(card);
