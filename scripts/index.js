@@ -1,6 +1,7 @@
 const buttonOpenEditProfile = document.querySelector(".subheader__button-edit");
 const saveData = document.querySelector(".popup__save-button");
 const popupEditProfileForm = document.querySelector(".popup__form");
+const cardList = document.querySelector(".content");
 
 function showPop() {
   const openPop = document.querySelector("#popup");
@@ -12,23 +13,22 @@ buttonOpenEditProfile.addEventListener("click", showPop);
 //criar variavel para cada um dos botoes
 const closeEdit = document.querySelector("#buttonCloseEdit");
 const closeCard = document.querySelector("#buttonClose");
-//colocar o addventListner para cada um exm, L24
-closeEdit.addEventListener ("click", function(){
-  const openPop = document.querySelector("#popup");
-  const popContainer = openPop.querySelector(".popup__container");
-  popContainer.style.display ="none";
-})
-closeCard.addEventListener ("click", function(){
-  const openPop = document.querySelector("#popupNew");
-  const popContainer = openPop.querySelector(".popup__container");
-  popContainer.style.display ="none";
-});
 
 function closePopupEditProfile(){
   const openPop = document.querySelector("#popup");
   const popContainer = openPop.querySelector(".popup__container");
   popContainer.style.display ="none";
 }
+
+function closePopupAddCard(){
+  const openPop = document.querySelector("#popupNew");
+  const popContainer = openPop.querySelector(".popup__container");
+  popContainer.style.display ="none";
+}
+
+//colocar o addventListner para cada um exm, L24
+closeEdit.addEventListener ("click", closePopupEditProfile);
+closeCard.addEventListener ("click", closePopupAddCard);
 
 function saveForm(event){
   event.preventDefault();
@@ -54,10 +54,31 @@ function addCardOpenPopup() {
   const popupNew = document.querySelector("#popupNew");
   //pegar o pop container
   const popContainer = popupNew.querySelector(".popup__container");
-  popContainer.style.display ="block";
+  popContainer.style.display = "block";
 }
 buttonOpenAddCardPopup.addEventListener("click", addCardOpenPopup);
 const addCardForm = document.querySelector(".popup__form-addCard");
+
+addCardForm.addEventListener("submit", (evt) => {
+  evt.preventDefault();
+
+  // pegar os dados que o usuário adicionou nos inputs
+  const cardName = addCardForm.querySelector(".popup__text-card-name").value;
+  const cardLink = addCardForm.querySelector(".popup__text-url").value;
+
+  // chamar a função que cria cartão passando os dados do cartão
+  // guardar o retorno da função de criar cartão em uma variavel
+  const newCard = createCard({ name: cardName, link: cardLink});
+
+  // adicionar o novo cartão (guardado na variavel) no elemento section que guarda todos os cartões
+  cardList.prepend(newCard);
+
+  // limpar os inputs do formulário
+  addCardForm.reset();
+
+  // fechar o popup de adicionar cartão
+  closePopupAddCard();
+});
 
 //add card
 //array
@@ -115,6 +136,7 @@ function createCard(newCard){
       image.classList.add(".gallery__title-button");
       return ;
   })
+  
 
   cardName.textContent = newCard.name;
   cardLink.src = newCard.link;
@@ -122,7 +144,8 @@ function createCard(newCard){
 
   return cardElement;
 }
-//lixeira da foto da galeria
+
+
 function deletePhoto() {
   const trash = document.querySelector('.trash-icon');
   if (confirm('Você tem certeza que deseja deletar esta foto?')) {
@@ -130,8 +153,6 @@ function deletePhoto() {
   }
 }
 
-
-const cardList = document.querySelector(".content");
 initialCards.forEach((card) => {
   const cardElement = createCard(card);
   cardList.prepend(cardElement);
